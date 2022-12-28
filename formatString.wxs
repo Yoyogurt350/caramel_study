@@ -1,0 +1,12 @@
+var formatString = {
+    strSub: function (str, n) {
+        var result = str;
+        if (str.length > n) {
+            result = str.substring(0, n) + "…"
+        }
+        return result
+    }
+}
+module.exports = {
+    strSub: formatString.strSub
+}

@@ -1,0 +1,22 @@
+<div>
+  <view class="logs">
+    <view class="sum-item" wx:for="{{sum}}" wx:key="index">
+      <view class="sum-title">{{item.title}}</view>
+      <view class="sum-text">{{item.sum}}</view>
+    </view>
+  </view>
+  <view class="detail">
+    <view class="detail-title">Statistics</view>
+    <view class="detail-type">
+      <text data-index="0" class="{{activeIndex==0?'active':''}}" bindtap="change">Today</text>
+      <text data-index="1" class="{{activeIndex==1?'active':''}}" bindtap="change">Total</text>
+    </view>
+  </view>
+  <view class="list">
+    <view class="list-item" wx:for="{{list}}" wx:key="index">
+      <text class="list-data">{{item.date}}</text>
+      <text class="list-type">Work subject</text>
+      <text class="list-time">{{item.time}}minute</text>
+    </view>
+  </view>
+</div>

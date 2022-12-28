@@ -1,0 +1,106 @@
+.main{
+  padding: 15rpx;
+}
+.slider{
+  height: 40rpx;
+  margin: 50rpx auto;
+}
+.task_text{
+  height: 130rpx;
+  font-size: medium;
+  margin: 25 rpx auto;
+  text-align: center;
+}
+.task_text .task_selct{
+  height: 30rpx;
+  margin: 30rpx 0;
+}
+.task_text .task_point{
+  height: 50rpx;
+  color: #ccc;
+}
+/* 图标和文字 */
+.task_body{
+  width: 660rpx;
+  //text-align: center;
+  text-align: left;
+  FONT-SIZE: medium;
+  display: flex;
+  flex-wrap: wrap;
+  align-items:left;
+  margin: 40rpx 0 30rpx 40rpx;
+}
+.task_item{
+  width: 220rpx;
+  //display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60rpx;
+  text-align: center;
+}
+.task_item .task_icon{
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+} 
+.task_item .task_icon image{
+  width: 60rpx;
+  height: 60rpx;
+}
+.task_item .task_icon .item_txt{
+  margin-top: 20rpx;
+}
+.item_txt.active{
+  color:#e9b15e;
+  transform: scale(1.1);
+}
+.btn{
+  width: 300rpx;
+  height: 90rpx;
+  border: 2rpx solid #e9b15e;
+  border-radius: 20rpx;
+  margin: 50rpx auto;
+  line-height: 80rpx;
+  text-align: center;
+  color: #f5d496;
+}
+
+/* 计时间 */
+.clock{
+  height: 100vh;
+  overflow: hidden;
+  background-color: #e9b15e;
+}
+.proess{
+  margin: 100rpx auto;
+  width: 400rpx;
+  height: 400rpx;
+  position: relative;
+}
+.proess_active,.proess_bg{
+  width: 400rpx;
+  height: 400rpx;
+  position: absolute;
+}
+.proess_text{
+  font-size: 70rpx;
+  color: #fff;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top:40%;
+}
+/* 按钮 */
+.btns{
+  margin: 0 auto;
+  text-align: center;
+}
+.okbtn ,.stopbtn, .continuebtn, .downbtn{
+  width: 280rpx;
+  height: 80rpx;
+  margin: 10rpx auto;
+  color: #fff;
+  line-height: 80rpx;
+  border-radius: 30rpx;
+  border:1rpx solid #fff;
+}
